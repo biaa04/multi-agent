@@ -39,7 +39,7 @@ supervisor_agent = create_agent(
     system_prompt=supervisor_prompt
 )
 
-query = "Converta 100 km para metros"
+query = "Converta 100 km para metros e 30°C para Fahrenheit."
 
 for step in supervisor_agent.stream(
     {"messages": [{"role": "user", "content": query}]}

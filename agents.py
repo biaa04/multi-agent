@@ -11,7 +11,7 @@ from tools import (
     kelvin_to_celsius
 )
 
-model = init_chat_model("ollama:llama3.2")
+model = init_chat_model("ollama:qwen3")
 
 agent_meters_prompt = (
     "Você é um agente executor de conversões de distância." 
