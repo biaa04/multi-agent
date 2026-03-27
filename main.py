@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from agents import model
 
 class ConverterInput(BaseModel):
-    user_input: str = Field(description="Texto original do usuário contendo a conversão")
+    user_input: str = Field(description="Texto original do usuário contendo a conversão.")
 
 @tool(args_schema=ConverterInput)
 def temperature_converter(user_input: str) -> str:
